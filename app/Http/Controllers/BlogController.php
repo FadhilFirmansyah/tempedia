@@ -12,7 +12,7 @@ class BlogController extends Controller
 {
     public function home():Response{
         return response()->view("home", [
-           "title" => "Home",
+           "title" => "Tempedia",
            "active" => "home"
         ]);
     }
@@ -60,8 +60,8 @@ class BlogController extends Controller
     
     public function categories():Response{
         return response()->view("categories", [
-            "title" => "List Category",
-            "active" => "category",
+            "title" => "Informasi",
+            "active" => "informasi",
             "categories" => Category::all()
         ]);
     }

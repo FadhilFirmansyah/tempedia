@@ -10,10 +10,10 @@
             <a class="nav-link {{ ($active == "about") ? "active" : "" }}" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($active == "category") ? "active" : "" }}" href="/informasi">Informasi</a>
+            <a class="nav-link {{ ($active == "informasi") ? "active" : "" }}" href="/informasi">Informasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($active == "category") ? "active" : "" }}" href="/mitra">Mitra</a>
+            <a class="nav-link {{ ($active == "mitra") ? "active" : "" }}" href="/mitra">Mitra</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
