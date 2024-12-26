@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-warning">
-    <div class="container">
+    <div class="container-nav">
       <a class="navbar-brand" href="/">Tempedia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,3 +42,23 @@
       </div>
     </div>
   </nav>
+<style>
+
+.mt-4{
+  margin-top: 0 !important;
+ }
+
+.container-nav{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    --bs-gutter-x: 10rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: 0;
+    margin-left: 0;
+}
+</style>
