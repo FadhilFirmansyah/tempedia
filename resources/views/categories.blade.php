@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('container')
-    <h1>Categories</h1> <br>
+    <h1 style="text-align: center">Informasi Tempe</h1> <br>
 
     <div class="container">
         <div class="row">

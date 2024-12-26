@@ -22,7 +22,7 @@ Route::get("/", [BlogController::class, "home"]);
 Route::get("/about", [BlogController::class, "about"]);
 Route::get("/blogs", [BlogController::class, "blog"]);
 Route::get("/blogs/{slugContent:slug}", [BlogController::class, "content"]);
-Route::get("/categories", [BlogController::class, "categories"]);
+Route::get("/informasi", [BlogController::class, "categories"]);
 
 Route::get("/login", [LoginController::class, "index"])->name("login")->middleware("guest");
 Route::post("/login", [LoginController::class, "authenticate"]);

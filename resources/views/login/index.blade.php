@@ -40,7 +40,7 @@
               <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Login</button>
             </form>
             <small class="d-block text-end mt-3">
-              Doesn't have account yet? <a href="/register">create right now!</a>
+              {{-- Doesn't have account yet? <a href="/register">create right now!</a> --}}
             </small>
         </main>
     </div>
