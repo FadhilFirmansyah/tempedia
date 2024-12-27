@@ -17,7 +17,14 @@
     </div>
     <div class="mt-5">
         <h4>Sejarah singkat berdirinya Usaha</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Pak Ngadinu memulai usaha sejak tahun 1999-an, mulai dari reseller tempe hingga sekarang bisa membuat tempe sendiri di rumahnya,
+            Pak Ngadinu berhasil menjadi seorang penjual tempe yang dikenal di kampungnya, banyak pasar dan warung makan menjadikan tempe Pak Ngadinu langganan mereka. </p>
     </div>
 </div>
+<style>
+    .mt-5{
+        margin-top: 1.5rem !important;
+    }
+</style>
+
 @endsection
