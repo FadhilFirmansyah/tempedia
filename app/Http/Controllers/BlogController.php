@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\Mitra;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -63,6 +64,22 @@ class BlogController extends Controller
             "title" => "Informasi",
             "active" => "informasi",
             "categories" => Category::all()
+        ]);
+    }
+
+    public function mitra():Response{
+        return response()->view("mitra", [
+            "title" => "Mitra",
+            "active" => "mitra",
+            "mitras" => Mitra::all()
+        ]);
+    }
+
+    public function mitraDetail(Mitra $slugContent):Response{
+        return response()->view("detail", [
+            "title" => "Detail Mitra",
+            "active" => "mitra",
+            "content" => $slugContent
         ]);
     }
 }

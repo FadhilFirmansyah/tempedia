@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\Mitra;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -38,5 +39,6 @@ class DatabaseSeeder extends Seeder
             "slug" => "faktaa"
         ]);
         Blog::factory(20)->create();
+        Mitra::factory(5)->create();
     }
 }

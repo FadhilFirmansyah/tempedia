@@ -13,6 +13,12 @@
             My Blogs
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ Request::is("dashboard/mitra*") ? "active" : '' }}" href="/dashboard/mitra">
+            <span data-feather="users" class="align-text-bottom"></span>
+            Mitra
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

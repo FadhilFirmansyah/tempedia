@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardBlogController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MitraController;
 use App\Http\Controllers\RegisterController;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,8 @@ Route::get("/about", [BlogController::class, "about"]);
 Route::get("/blogs", [BlogController::class, "blog"]);
 Route::get("/blogs/{slugContent:slug}", [BlogController::class, "content"]);
 Route::get("/informasi", [BlogController::class, "categories"]);
+Route::get("/mitra", [BlogController::class, "mitra"]);
+Route::get("/mitra/{slugContent:slug}", [BlogController::class, "mitraDetail"]);
 
 Route::get("/login", [LoginController::class, "index"])->name("login")->middleware("guest");
 Route::post("/login", [LoginController::class, "authenticate"]);
@@ -35,3 +38,6 @@ Route::get("/dashboard", function(){
 
 Route::get("/dashboard/blog/checkSlug", [DashboardBlogController::class, "checkSlug"])->middleware("auth");
 Route::resource("/dashboard/blog", DashboardBlogController::class)->middleware("auth");
+
+Route::get("/dashboard/mitra/checkSlug", [MitraController::class, "checkSlug"])->middleware("auth");
+Route::resource("/dashboard/mitra", MitraController::class)->middleware("auth");
